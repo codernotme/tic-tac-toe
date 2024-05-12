@@ -1,0 +1,82 @@
+/* Filename - App.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.App {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 5vh;
+	backdrop-filter: blur(10px); /* Increased blur */
+	background-color: #000; /* Dark background for neon effect */
+}
+
+.winner {
+	transition: all ease-in 0.3s;
+	display: flex;
+	opacity: 1;
+	font-size: 1.8rem; /* Larger font size */
+	font-weight: 700; /* Bolder font weight */
+	gap: 1vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 30vw; /* Wider container */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); /* Centered vertically */
+	background-color: rgb(0, 0, 0);
+	padding: 1rem; /* More padding */
+	border-radius: 1rem; /* Rounded corners */
+	box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), /* Cyan glow effect */
+				0 0 30px rgba(0, 255, 255, 0.7), /* Cyan glow effect */
+				0 0 40px rgba(0, 255, 255, 1); /* Cyan glow effect */
+}
+
+.winner-text {
+	padding: 0.5em 1.5em 0.25em; /* More padding */
+	font-weight: 700; /* Bolder font weight */
+	font-size: 3rem; /* Larger font size */
+	color: #fff; /* White text */
+	font-family: "Roboto", sans-serif; /* Changed font family */
+	position: relative;
+	text-align: center;
+	line-height: 1.3;
+	text-shadow: 0 0 20px rgba(0, 255, 255, 1); /* Neon glow effect */
+}
+
+.shrink {
+	transform: scale(0.1);
+	opacity: 0;
+}
+
+button {
+	background-color: #0f0; /* Neon green button color */
+	border: none; /* No border for cleaner look */
+	border-radius: 1rem; /* Rounded corners */
+	color: #fff; /* White text */
+	cursor: pointer;
+	font-family: "Roboto", sans-serif; /* Changed font family */
+	font-size: 1.25rem; /* Larger font size */
+	font-weight: 700; /* Bolder font weight */
+	line-height: 1.5rem;
+	padding: 0.75rem 1.5rem; /* Increased padding */
+	text-align: center;
+	transition: all 0.3s ease; /* Smooth transition */
+	user-select: none;
+	outline: none; /* No outline on focus */
+	box-shadow: 0 0 20px rgba(0, 255, 0, 0.7); /* Neon glow effect */
+}
+
+button:hover {
+	background-color: #0f0; /* Neon green hover color */
+	transform: scale(1.05); /* Scale up on hover for interactive effect */
+}
+
+@media (min-width: 768px) {
+	/* No changes for larger screens */
+}
